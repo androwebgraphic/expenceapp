@@ -1,0 +1,172 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+#Wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  align-items: start;
+  background: #1A2980;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+
+#splash img {
+
+  height: 40rem;
+/*   background-image: url("img//Volumes/BigSur/Applications/MAMP/htdocs/expenceapp/img/troškovnik.png"); */
+  background-repeat: no-repeat; 
+  display:block;
+  margin: 0 auto;
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  align-items: flex-start;
+  font-size: 3.4em;
+}
+
+main {
+  width: 25rem;
+  margin: 0 auto;
+
+  /*   background-position: cover; */
+}
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+label {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+}
+input {
+  height: 2.5em;
+  border-radius: 2.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid lightskyblue;
+  }
+::placeholder{
+  
+  text-align: center;
+  font-size: 1.6rem;
+}
+button {
+  margin: 0;
+  padding: 0 0.5rem 0 0.5rem;
+  border: none;
+  border-radius: 0.5em;
+  background-color: green;
+  height: 3em;
+  color: white;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+main p {
+  font-size: 1.7em;
+  line-height: 1.5em;
+}
+
+  
+  
+#State {
+  /* 	border: 1px solid #37FF00; */
+  border-radius: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 2em;
+  padding: 2em;
+}
+
+#Scan {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+#result {
+  display:block;
+  background-color: green;
+  color: #fff;
+  padding: 20px;
+}
+#result span a{
+  
+  font-size: 1.25rem;
+  color:white;
+}
+#reader{
+  
+  border-radius: 1rem;
+  background:white;
+}
+.warning{
+  padding: 1rem;
+  font-style: italic;
+  border-radius: .5rem;
+}
+#splash{
+  
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100vh;
+  background-color: orange;
+  z-index: 200;
+  color: white;
+
+}
+#splash p, #splash h1{
+    
+    width: 90%;
+    margin: 1rem  auto 1rem auto;
+  }
+  #splash h1{
+    
+    font-size: 2.8rem;
+  }
+#splash.display-none{
+  opacity: 0;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100vh;
+  background-color: orange;
+  z-index: -10;
+  transition:  all 0.5s;
+}
+
+@keyframes fadeIn {
+  
+  from{
+    opacity:0;
+  }to
+  
+.fadeIn{
+    
+   opacity:0;
+   
+   animation: fadeIn .5s ease-in forwards; 
+ }
+
+    keyframes
