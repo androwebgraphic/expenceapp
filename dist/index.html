@@ -20,70 +20,88 @@
     <![endif]-->
   </head>
 
-  <body>
-    <div id="Wrap">
+<body>
+<div id="Wrap">
       
-  
-        <header>
+<div id="splash">
+                       
+                   <img src="./img/troškovnik.png" alt="logo"/>
+                   <h1>Dobrodošli u aplikaciju za vođenje <em>kućnog buđeta</em></h1>
+                   <p>Ova aplikacija je namijenjena za vlastito vođenje evidencije potrošnje. Alikacija nije direktno povezana s Vašim bankovnim računom, zato trebate samostalno unijeti podatke i za račun ili skenirati QR cod na računu.</p>
+</div>          
+   <header>
            <h1>Troškovnik</h1>
          
-         </header>
-      
-<div id="Scan">
-        <div id="reader"></div>
-        <div id="result">
-          <h4>SCAN RESULT</h4>
-</div>
-      </div>
-      <main>
-<!--        <div id="splash">
-                     
-                 <img src="./img/troškovnik.png" alt="logo"/>
-                 <h1>Dobrodošli u aplikaciju za vođenje <em>kućnog buđeta</em></h1>
-                 <p>Ova aplikacija je namijenjena za vlastito vođenje evidencije potrošnje. Alikacija nije direktno povezana s Vašim bankovnim računom, zato trebate samostalno unijeti podatke i za račun ili skenirati QR cod na računu.</p>
-               </div>   -->
-       <form id="expences">
+</header>
+         
+         <div id="Scan">
+                 <div id="reader"></div>
+                 <div id="result">
+                   <h4>SCAN RESULT</h4>
+         </div>
+         </div>
+<main>
+
+<form id="expences">
+  
+          <label for="dateBill">Unesite datum</label>
+          <input
+            type="date"
+            name="dateBill"
+            id="dateBill"
+           
+            autofocus
+          />
           <label for="limitInput">Odredite limit na računu(nije obavezno)</label>
           <input
             type="number"
             name="limitInput"
             id="limitInput"
             placeholder="Odredite limit na računu"
+           
           />
           
-          
-          
-          
-          <label for="currentstate">Upiši sadašnje stanje</label>
+         <label for="currentstate">Upiši sadašnje stanje</label>
           <input
             type="number"
             name="currentstate"
             id="currentstate"
             placeholder="upiši sadašnje stanje"
+            step=0.01
+            
           />
           <p class="warning"></p>
           <!--        <button type="submit" value="submit">Potvrdi stanje</button> -->
-          <label for="expencevalue">Upiši iznos računa ili skeniraj QR code računa</label>
+          <label for="expence">Upiši iznos računa ili skeniraj QR code računa</label>
           <input
             type="number"
-            name="expencevalue"
-            id="expencevalue"
-            placeholder="Upiši iznos računa ili skeniraj QR code računa"
+            name="expence"
+            id="expence"
+            step=0.01           
+             placeholder="Upiši iznos računa(npr: 27.37) ili skeniraj QR code računa"
           />
-
+          
+          
+          
           <p class="warning"></p>
           <button type="submit" value="submit" id="bill">Potvrdi račun</button>
-        </form>
-      </main>
-      <div id="State"></div>
-      <footer>Copyright</footer>
+</form>
+
+
+<div id="State">
+
+  
+  
+</div>
+</main><!-- <buttton class="delete" value="submit">Obriši račune</buttton> -->
+
+<footer>Copyright by <a href="https://androwebgraphic.com" target="_blank">Androwebgraphic</a></footer>
     </div>
     <!--END OF WRAP-->
     
-    
-<!--     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script> -->
-    <script src="bundle.js"></script>
-<!--     <script src="./js/html5-qrcode.min.js"></script>
-    <script src="./js/app.js"></script> -->
+<script src="html5-qrcode.min.js"></script>    
+<script src="bundle.js"></script>
+ 
+<!--     <script src="./js/app.js"></script>  -->
   </body>
 </html>

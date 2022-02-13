@@ -4,6 +4,7 @@
 	 
 	 
 	 mode: 'development',
+	 devtool: 'eval',
 	 entry: './src/index.js',
 	 output: {
 		 
